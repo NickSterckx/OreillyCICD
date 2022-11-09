@@ -4,7 +4,7 @@ on:
    
 jobs:
   be-build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Cache Node Modules
         id: cache
@@ -113,7 +113,7 @@ jobs:
         uses: github/codeql-action/analyze@v1
 
   fe-build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Cache Node Modules
         id: cache
