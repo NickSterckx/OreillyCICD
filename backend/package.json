@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "prestart": "npm run build",
-    "start": "node build/server.js",
+    "start": "node dist/server.js",
     "test": "jest",
     "build": "tsc",
-    "postbuild": "copy package*.json build && cd build && npm ci --production",
+    "postbuild": "cp package*.json build && cd build && npm ci --production",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "keywords": [],
